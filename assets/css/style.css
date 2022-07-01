@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+}
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FDEFEF;
+    position: fixed;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.logo {
+    margin-left: 10px;
+}
+
+.logo img{
+    width: 10%;
+}
+
+ul li{
+    display: inline;
+    gap: 1em;
+    padding: 5px 14px;
+}
+
+ul a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #866a49;
+    opacity: 75%;
+}
+
+ul a:hover{
+    opacity: 100%;
+    text-decoration-line: underline;
+    text-decoration-color:#866a49;
+}
+
+ul a:active{
+    opacity: 100%;
+    text-decoration-line: underline;
+}
+
+input[type=checkbox]{
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    margin-right: 10px;
+}
+
+main {
+
+    overflow: auto;
+}
+
+#content {
+    width: 100%;
+}
+
+.article {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #F4DFD0;
+    
+}
+
+.beranda{
+    padding-top: 40px;
+    height: 850px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/assets/image/bg.jpg');
+    color: #FDEFEF;
+    text-align: center;
+}
+
+.beranda img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+
+}
+
+.beranda p{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.beranda h1{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.profil, .flex-container-column, .kontak{
+    padding: 100px;
+}
+
+.sectionprofil{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #FDEFEF;
+    overflow: auto;
+}
+
+.profil h1{
+    text-align: center;
+    color: #695237;
+    text-decoration: solid underline;
+}
+
+.profil h2 {
+    text-align: center;
+    color: #866a49;
+}
+
+.profil-text{
+    margin-top: 65px;
+    text-align: justify;
+    color: #866a49;
+}
+
+.profilimage{
+    border-radius: 15px;
+    width: 30%;
+    padding: 10px;
+    float: right;
+}
+
+.flex-container-column h1{
+    text-align: center;
+    color: #695237;
+    text-decoration: solid underline;
+    padding-bottom: 10px;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.flex-container-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.produk{
+    flex:  0 1 30%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 40px;
+    overflow: auto
+}
+
+.produk img{
+    border-radius: 5px 5px 0 0;
+    display: block;
+    width: 100%;
+    height: 70%;
+}
+
+.diskripsi{
+    margin-top: 10px;
+    padding: 10px 16px;
+    text-align: justify;
+    color: #866a49;
+}
+
+.containerkontak{
+    border-radius: 5px;
+    background-color: #F4DFD0;
+    padding: 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerkontak label{
+    color: #866a49;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #866a49;
+    color: #F4DFD0;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #aa8357;
+}
+
+aside {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 40px;
+    width: 20%;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.author img{
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 100px;
+}
+.author h2, th{
+    color: #866a49;
+}
+
+.author tr{
+    text-align: left;
+}
+
+footer {
+    padding: 20px;
+    color: #866a49;
+    background-color: #FDEFEF;
+    text-align: center;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu { 
+    display:none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+    background-color: #FDEFEF;
+    }
+
+.menu li + li {
+    margin-top: 12px;
+    display: block;
+    }
+
+input[type=checkbox]:checked ~ .menu{
+    display: block;
+    }
+
+.hamburger {
+    display: block;
+    }
+
+.beranda img{
+    width: 100%;
+}
+
+.profilimage{
+    width: 100%;
+}
+
+.produk{
+    overflow: hidden;
+}
+
+.produk img{
+    height: 50%;
+}
+
+.containerkontak{
+    width: 100%;
+}
+aside {
+    width: 100%;
+    padding: 0;
+    }
+}
